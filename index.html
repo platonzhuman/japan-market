@@ -6,8 +6,29 @@
     <meta name="description" content="JAPAN STORE - аутентичные японские товары для автолюбителей">
     <link href="./style.css" rel="stylesheet" type="text/css">
     <title>JAPAN STORE - Аутентичные японские товары</title>
+    <style>
+        /* Дополнительные стили для фона */
+        .page-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.7); /* Затемнение для лучшей читаемости текста */
+        }
+        
+        .grid-container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 <body class="grid-container">
+    <!-- Фон как img элемент -->
+    <img src="image/95c6a0fa3e68eeed4b88f9b531e0ce17.jpg" class="page-bg" alt="Фон сайта">
+    
     <header class="flex header">
         <div class="logo">JAPAN STORE</div>
         
@@ -58,7 +79,7 @@
         
         <div class="flex promo">
             <div class="promo-content">
-                <img src="./image/mamor.jpeg">
+                <img src="./image/mamor.jpeg" alt="Omamori - японский талисман">
                 <h3>お守り - Omamori !</h3>
                 <div class="info">
                     Редкие и ценные японские автомобильные талисманы. Эти традиционные обереги 
